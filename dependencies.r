@@ -7,7 +7,7 @@ install.packages("remotes", Ncpus = cores_to_use)
 # Create a dictionary-like list of packages and version numbers to install
 packages <- c(
     # "covr" = "3.6.1",
-    # "testthat" = "3.1.6",
+    "testthat" = "3.1.6"
     # "DT" = "0.27"
 )
 
