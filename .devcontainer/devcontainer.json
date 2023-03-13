@@ -1,17 +1,17 @@
-{"image":"jupyter/datascience-notebook:r-4.2.2",
-"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-"customizations": {
-    "vscode": {
-        "settings": {
-            "[r]": {
-                    "editor.formatOnType": true,
-					"editor.formatOnSave": true,
-					"editor.formatOnPaste": true,
-					"editor.defaultFormatter": "REditorSupport.r"
-            },
-            "r.bracketedPaste": true
-        }
-    }
-},
-"remoteUser": "root"
+{
+    "image": "jupyter/datascience-notebook:r-4.2.2",
+    // "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    // "customizations": {
+    //     "vscode": {
+    //         "settings": {
+    //             "[r]": {
+    //                     "editor.formatOnType": true,
+    // 					"editor.formatOnSave": true,
+    // 					"editor.formatOnPaste": true,
+    // 					"editor.defaultFormatter": "REditorSupport.r"
+    //             },
+    //             "r.bracketedPaste": true
+    //         }
+    //     }
+    "remoteUser": "root"
 }
