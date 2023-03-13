@@ -1,5 +1,5 @@
-# FROM jupyter/datascience-notebook:r-4.2.2
-FROM ghcr.io/rocker-org/devcontainer/r-ver:4.2
+FROM jupyter/datascience-notebook:r-4.2.2
+# FROM ghcr.io/rocker-org/devcontainer/r-ver:4.2
 
 # COPY . .
 
