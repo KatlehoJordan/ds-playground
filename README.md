@@ -22,6 +22,7 @@ Steps taken to create this repo:
     - ipython
     - node
 3. Have not yet tried
+    - jupyter in the container
     - python optimisation configuration
     - mongodb
-    - postgres (or another SQL database)
+    - postgres (or another SQL database such as sql lite or mysql)
