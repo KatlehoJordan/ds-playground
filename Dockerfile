@@ -1,10 +1,16 @@
-FROM jupyter/datascience-notebook:r-4.2.2
-# FROM ghcr.io/rocker-org/devcontainer/r-ver:4.2
+FROM mcr.microsoft.com/devcontainers/python:0-3.11
 
-# COPY . .
+ENV PYTHONUNBUFFERED=1
+ENV PIP_ROOT_USER_ACTION=ignore
 
-# RUN \
-#     Rscript dependencies.r && \
-#     echo "alias r=radian" >> /etc/bash.bashrc
+COPY pyproject.toml pyproject.toml
+COPY poetry.lock poetry.lock
 
-# CMD ["Rscript", "main.r"]
+RUN pip install --upgrade pip==23.1.2 && \
+    pip install poetry==1.4.2 ipython==8.13.2 --root-user-action=ignore && \
+    poetry config virtualenvs.create false && \
+    poetry install --no-interaction --no-ansi
+
+COPY . .
+
+CMD ["python", "main.py"]
