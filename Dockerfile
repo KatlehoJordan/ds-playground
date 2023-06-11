@@ -1,10 +1,6 @@
 FROM python:3.9.17-slim-bullseye
 
 RUN \
-  apt update && \
-  apt install sudo && \
-  sudo apt upgrade -y && \
-  sudo apt install git -y && \
   pip install --upgrade pip==23.1.2
 
 
@@ -14,7 +10,12 @@ RUN \
 # COPY pyproject.toml pyproject.toml
 # COPY poetry.lock poetry.lock
 
-# RUN pip install --upgrade pip==23.1.2 && \
+# RUN \
+# apt update && \
+# apt install sudo && \
+# sudo apt upgrade -y && \
+# sudo apt install git -y && \
+# pip install --upgrade pip==23.1.2 && \
 #     pip install poetry==1.4.2 ipython==8.13.2 --root-user-action=ignore && \
 #     poetry config virtualenvs.create false && \
 #     poetry install --no-interaction --no-ansi
