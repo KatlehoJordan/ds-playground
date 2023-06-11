@@ -10,13 +10,6 @@
       "settings": {
         "git.enabled": false
       }
-      // 		"extensions": [
-      // 			"KevinRose.vsc-python-indent",
-      // 			"njpwerner.autodocstring",
-      // 			"VisualStudioExptTeam.vscodeintellicode",
-      // 			"VisualStudioExptTeam.intellicode-api-usage-examples",
-      // 			"donjayamanne.python-environment-manager",
-      // 		]
     }
   },
   "remoteUser": "root"

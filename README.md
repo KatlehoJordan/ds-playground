@@ -20,21 +20,17 @@ This container is meant to be used for rapid development of data science project
   - `tensorflow`
   is setup and all common DS packages are installed
 
-
-
-
-
 ## Next steps
 
-1. Get the REPL to automatically send an entire block of code instead of just the line
-2. Get the REPL to advance the cursor after running some code
+1. CodeGPT extension: https://codegpt.co/
+2. Get the python REPL to automatically send an entire block of code instead of just the line
+3. Get the python REPL to advance the cursor after running some code
+4. Add R
+  - with radian
+  - with VS Code Debugger
+  - with Jupyter Notebook support
 
-- Explore using [lazypredict](https://analyticsindiamag.com/visualizing-and-comparing-ml-models-using-lazypredict/) for quick testing of models for classification or regression.
 
 ## Not yet tried
 
-- Adding R
-  - radian
-  - VS Code Debugger
-  - R Markdown support
-- Adding Julia
+- R Markdown support

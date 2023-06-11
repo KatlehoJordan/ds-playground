@@ -1,6 +1,13 @@
+"""
+
+"""
+
+
 def greet(name):
-    """
-    This function takes a name as input and prints a greeting message.
+    """_summary_
+
+    Args:
+        name (_type_): _description_
     """
     message = f"Hello, {name}!"
     print(message)
