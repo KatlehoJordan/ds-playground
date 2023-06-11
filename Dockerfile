@@ -1,16 +1,24 @@
-FROM mcr.microsoft.com/devcontainers/python:0-3.11
+FROM python:3.9.17-slim-bullseye
 
-ENV PYTHONUNBUFFERED=1
-ENV PIP_ROOT_USER_ACTION=ignore
+RUN \
+  apt update && \
+  apt install sudo && \
+  sudo apt upgrade -y && \
+  sudo apt install git -y && \
+  pip install --upgrade pip==23.1.2
 
-COPY pyproject.toml pyproject.toml
-COPY poetry.lock poetry.lock
 
-RUN pip install --upgrade pip==23.1.2 && \
-    pip install poetry==1.4.2 ipython==8.13.2 --root-user-action=ignore && \
-    poetry config virtualenvs.create false && \
-    poetry install --no-interaction --no-ansi
+# ENV PYTHONUNBUFFERED=1
+# ENV PIP_ROOT_USER_ACTION=ignore
 
-COPY . .
+# COPY pyproject.toml pyproject.toml
+# COPY poetry.lock poetry.lock
 
-CMD ["python", "main.py"]
+# RUN pip install --upgrade pip==23.1.2 && \
+#     pip install poetry==1.4.2 ipython==8.13.2 --root-user-action=ignore && \
+#     poetry config virtualenvs.create false && \
+#     poetry install --no-interaction --no-ansi
+
+# COPY . .
+
+# CMD ["python", "main.py"]
