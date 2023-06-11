@@ -1,15 +1,20 @@
-FROM mcr.microsoft.com/devcontainers/python:0-3.11
+FROM python:3.9.17-slim-bullseye
 
-ENV PYTHONUNBUFFERED=1
-ENV PIP_ROOT_USER_ACTION=ignore
+ENV \
+  PYTHONUNBUFFERED=1 \
+  PYTHONDONTWRITEBYTECODE=1 \
+  PIP_ROOT_USER_ACTION=ignore \
+  PIP_DEFAULT_TIMEOUT=300
 
-COPY pyproject.toml pyproject.toml
-COPY poetry.lock poetry.lock
+COPY python-requirements.txt python-requirements.txt
 
-RUN pip install --upgrade pip==23.1.2 && \
-    pip install poetry==1.4.2 ipython==8.13.2 --root-user-action=ignore && \
-    poetry config virtualenvs.create false && \
-    poetry install --no-interaction --no-ansi
+RUN \
+  apt update && \
+  apt install sudo && \
+  sudo apt upgrade -y && \
+  # Required for parallel processing in some ML libraries
+  sudo apt install libgomp1 && \
+  pip install -r python-requirements.txt --root-user-action=ignore
 
 COPY . .
 

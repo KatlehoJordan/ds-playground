@@ -1,43 +1,16 @@
 {
-	"name": "Data science playground",
-	"dockerComposeFile": [
-		"../docker-compose.yml"
-	],
-	"service": "ds-playground",
-	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-	"customizations": {
-		"vscode": {
-			"settings": {
-				"[python]": {
-					"editor.defaultFormatter": "ms-python.black-formatter",
-					"editor.formatOnSave": true,
-					"editor.formatOnType": true
-				},
-				"python.terminal.launchArgs": [
-					"-m",
-					"IPython",
-					"--no-autoindent",
-					"-i"
-				],
-			},
-			"extensions": [
-				"KevinRose.vsc-python-indent",
-				"njpwerner.autodocstring",
-				"VisualStudioExptTeam.vscodeintellicode",
-				"VisualStudioExptTeam.intellicode-api-usage-examples",
-				"ms-python.vscode-pylance",
-				"ms-python.python",
-				"donjayamanne.python-environment-manager",
-				"ms-toolsai.jupyter",
-				"ms-toolsai.jupyter-keymap",
-				"ms-toolsai.jupyter-renderers",
-				"ms-python.black-formatter"
-			]
-		}
-	},
-	"remoteUser": "root"
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "pip3 install --user -r requirements.txt",
+  "name": "Data science playground",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "ds-playground",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "git.enabled": false
+      }
+    }
+  },
+  "remoteUser": "root"
 }
