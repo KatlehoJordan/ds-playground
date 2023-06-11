@@ -1,15 +1,18 @@
-FROM mcr.microsoft.com/devcontainers/python:0-3.11
+FROM --platform=linux python:3.9
 
-ENV PYTHONUNBUFFERED=1
-ENV PIP_ROOT_USER_ACTION=ignore
+ENV \
+  PYTHONUNBUFFERED=1 \
+  PYTHONDONTWRITEBYTECODE=1 \
+  PIP_ROOT_USER_ACTION=ignore \
+  PIP_DEFAULT_TIMEOUT=300
 
-COPY pyproject.toml pyproject.toml
-COPY poetry.lock poetry.lock
+COPY requirements.txt requirements.txt
 
-RUN pip install --upgrade pip==23.1.2 && \
-    pip install poetry==1.4.2 ipython==8.13.2 --root-user-action=ignore && \
-    poetry config virtualenvs.create false && \
-    poetry install --no-interaction --no-ansi
+RUN \
+  apt-get update && \
+  apt-get install sudo && \
+  pip install --upgrade pip==23.1.2 && \
+  pip install -r requirements.txt --root-user-action=ignore
 
 COPY . .
 

@@ -1,0 +1,52 @@
+{
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[r]": {
+    "editor.defaultFormatter": "REditorSupport.r"
+  },
+  "isort.args": [
+    "--profile",
+    "black"
+  ],
+  "notebook.lineNumbers": "on",
+  "notebook.output.scrolling": true,
+  "notebook.output.textLineLimit": 5000,
+  "python.formatting.blackArgs": [
+    "--line-length",
+    "80"
+  ],
+  "python.formatting.provider": "none",
+  "python.linting.enabled": true,
+  "python.linting.flake8Args": [
+    "--max-line-length=80"
+  ],
+  "python.linting.flake8Enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.terminal.activateEnvInCurrentTerminal": false,
+  "python.terminal.launchArgs": [
+    "-m",
+    "IPython",
+    "--no-autoindent",
+    "-i"
+  ],
+  "python.testing.pytestArgs": [
+    "tests"
+  ],
+  "python.testing.pytestEnabled": false,
+  "python.testing.unittestEnabled": false,
+  "vsintellicode.features.python.deepLearning": "enabled",
+  "r.bracketedPaste": true,
+  "r.rterm.linux": "/usr/local/bin/radian",
+  "cSpell.words": [
+    "cuda",
+    "ipynb",
+    "mnist",
+    "optim",
+    "plotly",
+    "scatterplot",
+    "seaborn",
+    "sklearn",
+    "torchvision"
+  ]
+}
