@@ -13,7 +13,7 @@ This container is meant to be used for rapid development of data science project
 6. Go to `main.py` and use `shift + enter` to try to initiate the REPL in `ipython`.
   - If the REPL does not work at all, perhaps the wrong version of the python extension is being used. See if a reload fixes.
   - If the REPL does not open in `ipython`, either it is not installed, or the settings are not configured to open it in `ipython`
-7. Open `demo.ipynb` and run the cells to ensure that `jupyter` notebook is setup and renders `plotly` graphs
+7. Open `demo.ipynb` and run the cells to ensure that `jupyter` notebook is setup and all common DS packages are installed
 
 
 
