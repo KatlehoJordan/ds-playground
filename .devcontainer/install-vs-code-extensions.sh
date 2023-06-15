@@ -14,7 +14,7 @@ extensions=(
   "streetsidesoftware.code-spell-checker@2.20.4"
   # This comes last because previous extensions will install a newer version
   # that has bugs
-  "ms-python.python@2023.8.0"
+  "ms-python.python@2023.10.1"
 )
 
 for extension in "${extensions[@]}"; do
