@@ -1,3 +1,5 @@
+<!-- markdownlint-disable MD029 -->
+
 # Python for ds container
 
 This container is meant to be used for rapid development of data science projects.
@@ -24,17 +26,23 @@ This container is meant to be used for rapid development of data science project
 - `pandas`, `sklearn`, and `lazypredict`
 - `tensorflow`
   is setup and all common DS packages are installed
+  
+8. Ensure `pytest` is working by running `pytest` from a terminal
+9. Ensure `pytest` integration with VS Code is working by navigating to the testing tab. Then:
+    - Running the tests
+    - Add a break point in a test and run them again
+10. Ensure you can debug:
+    - A standalone file
+    - A module from any file  
 
 ## Next steps
 
-1. Enable pytest
-
-- with debugging tests
-
-2. CodeGPT extension: <https://codegpt.co/>
-3. Get the python REPL to automatically send an entire block of code instead of just the line
-4. Get the python REPL to advance the cursor after running some code
-5. Add R
+2. Consider installing ShellCheck or shell-format to format shell scripts
+3. Install prettier - code formatter into host machine for automatic formatting of JSON files
+4. Get the python REPL to automatically send an entire block of code instead of just the line
+5. Get the python REPL to advance the cursor after running some code
+6. Get python linters playing well together starting with black, then isort
+7. Add R
 
 - with devtools for installing fixed dependency versions
 - with radian

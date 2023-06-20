@@ -1,0 +1,20 @@
+{
+    "configurations": [
+        {
+            "justMyCode": true,
+            "module": "main",
+            "name": "Python: Module",
+            "request": "launch",
+            "type": "python"
+        },
+        {
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "name": "Python: Current File",
+            "program": "${file}",
+            "request": "launch",
+            "type": "python"
+        },
+    ],
+    "version": "0.2.0"
+}
