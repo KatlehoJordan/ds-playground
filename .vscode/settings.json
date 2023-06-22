@@ -22,12 +22,10 @@
     "notebook.output.scrolling": true,
     "notebook.output.textLineLimit": 5000,
     "python.formatting.blackArgs": [
-        "--line-length",
-        "80"
+        "--line-length=40"
     ],
-    "python.formatting.provider": "black",
     "python.linting.pylintArgs": [
-        "--max-line-length=80"
+        "--max-line-length=100"
     ],
     "python.linting.pylintEnabled": true,
     "python.terminal.launchArgs": [

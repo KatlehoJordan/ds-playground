@@ -1,16 +1,16 @@
 {
-  "name": "Data science playground",
-  "dockerComposeFile": [
-    "../docker-compose.yml"
-  ],
-  "service": "ds-playground",
-  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-  "customizations": {
-    "vscode": {
-      "settings": {
-        "git.enabled": false
-      }
-    }
-  },
-  "remoteUser": "root"
+    "name": "Data science playground",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "ds-playground",
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "git.enabled": false
+            }
+        }
+    },
+    "remoteUser": "root"
 }

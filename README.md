@@ -37,18 +37,16 @@ This container is meant to be used for rapid development of data science project
 
 ## Next steps
 
-2. Consider installing ShellCheck or shell-format to format shell scripts
-3. Install prettier - code formatter into host machine for automatic formatting of JSON files
-4. Get the python REPL to automatically send an entire block of code instead of just the line
-5. Get the python REPL to advance the cursor after running some code
-6. Get python linters playing well together starting with black, then isort
-7. Add R
+1. Add R
 
 - with devtools for installing fixed dependency versions
 - with radian
 - with VS Code Debugger
 - with Jupyter Notebook support
+- with R Markdown support
 
-## Not yet tried
-
-- R Markdown support
+2. As your project gets more complex, get python linters playing well together starting with black, then isort
+   1. Black format on save is not converting long strings that are split with slashes into strings wrapped in parenthesis)
+   2. Pylint is not respecting when I try to update the max line length argument, still complaining even if I bump it up a a lot
+   3. Black is not complaining even though I have set line length very low
+3. Get the python REPL to automatically send an entire block of code instead of just the line and then advance to the next line. [This discussion indicates the issue is currently being ignored](https://github.com/microsoft/vscode-python/issues/18105).
