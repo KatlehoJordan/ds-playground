@@ -37,16 +37,17 @@ This container is meant to be used for rapid development of data science project
 
 ## Next steps
 
-1. Add R
+1. Validate R works with:
 
-- with devtools for installing fixed dependency versions
-- with radian
 - with VS Code Debugger
 - with Jupyter Notebook support
 - with R Markdown support
+- building a Shiny app
 
-2. As your project gets more complex, get python linters playing well together starting with black, then isort
+2. Publish the finished image on GitHub for easier retrieval and faster building
+
+3. As your project gets more complex, get python linters playing well together starting with black, then isort
    1. Black format on save is not converting long strings that are split with slashes into strings wrapped in parenthesis)
    2. Pylint is not respecting when I try to update the max line length argument, still complaining even if I bump it up a a lot
    3. Black is not complaining even though I have set line length very low
-3. Get the python REPL to automatically send an entire block of code instead of just the line and then advance to the next line. [This discussion indicates the issue is currently being ignored](https://github.com/microsoft/vscode-python/issues/18105).
+4. Get the python REPL to automatically send an entire block of code instead of just the line and then advance to the next line. [This discussion indicates the issue is currently being ignored](https://github.com/microsoft/vscode-python/issues/18105).

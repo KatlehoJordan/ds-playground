@@ -3,6 +3,7 @@
 # Run this script after first building the dev container:
 # bash .devcontainer/install-extensions.sh
 extensions=(
+    # For python
     "ms-python.python@2023.10.1"
     "ms-python.vscode-pylance@2023.6.21"
     "ms-toolsai.jupyter@2023.5.1001582324"
@@ -12,6 +13,10 @@ extensions=(
     "ms-python.isort@2022.8.0"
     "ms-python.pylint@2023.4.0"
     "njpwerner.autodocstring@0.6.1"
+    # For R
+    "REditorSupport.r@2.8.1"
+    "RDebugger.r-debugger@0.5.4"
+    "Mikhail-Arkhipov.r@0.0.30"
 )
 
 for extension in "${extensions[@]}"; do
