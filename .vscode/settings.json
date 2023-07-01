@@ -38,10 +38,10 @@
         "tests"
     ],
     "python.testing.pytestEnabled": true,
-    "python.testing.unittestEnabled": false
-    // "[r]": {
-    //   "editor.defaultFormatter": "REditorSupport.r"
-    // },
-    // "r.bracketedPaste": true,
-    // "r.rterm.linux": "/usr/local/bin/radian",
+    "python.testing.unittestEnabled": false,
+    "[r]": {
+        "editor.defaultFormatter": "REditorSupport.r"
+    },
+    "r.bracketedPaste": true,
+    "r.rterm.linux": "/usr/local/bin/radian",
 }

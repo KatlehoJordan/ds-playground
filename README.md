@@ -32,8 +32,10 @@ This container is meant to be used for rapid development of data science project
     - Running the tests
     - Add a break point in a test and run them again
 10. Ensure you can debug:
-    - A standalone file
-    - A module from any file  
+    - A standalone file with `python`
+    - A module from any file with `python`
+11. Make sure you can run `radian` by sending `r` to the terminal
+12. Open `r-in-vs-code.r` and follow instructions to ensure the features are working as expected.
 
 ## Next steps
 

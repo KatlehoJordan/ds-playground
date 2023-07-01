@@ -16,7 +16,6 @@ extensions=(
     # For R
     "REditorSupport.r@2.8.1"
     "RDebugger.r-debugger@0.5.4"
-    "Mikhail-Arkhipov.r@0.0.30"
 )
 
 for extension in "${extensions[@]}"; do
