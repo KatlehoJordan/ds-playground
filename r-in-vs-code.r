@@ -115,3 +115,45 @@ my_new_var
 ## Document links: ctrl+click to jump to a document ####
 
 source("main.r")
+
+# Plotting ####
+
+# Plots can be cycled through, opened in a browser, and saved from the viewer
+
+library(ggplot2)
+library(plotly)
+library(shiny)
+
+## Base plotting ####
+
+plot1 <- plot(mpg$displ, mpg$hwy)
+plot2 <- plot(mpg$cyl, mpg$hwy)
+
+## ggplot plotting ####
+
+(
+    plot3 <- ggplot(mpg, aes(displ, hwy, color = class)) +
+        geom_point() +
+        theme(panel.background = element_rect(fill = "black"))
+)
+
+ggsave("outputs/plots/plot2.svg", plot2)
+ggsave("outputs/plots/plot3.jpg", plot3)
+
+## Easy changing of colors ####
+
+(
+    plot4 <- ggplot(mpg, aes(displ, hwy, color = class)) +
+        geom_point() +
+        theme(panel.background = element_rect(fill = "#ffffff"))
+)
+
+ggsave("outputs/plots/plot4.png", plot4)
+
+## Plotly of ggplots ####
+
+ggplotly(plot3)
+
+# Shiny apps ####
+
+shiny::runExample("01_hello")

@@ -43,5 +43,6 @@
         "editor.defaultFormatter": "REditorSupport.r"
     },
     "r.bracketedPaste": true,
+    "r.plot.useHttpgd": true,
     "r.rterm.linux": "/usr/local/bin/radian",
 }
