@@ -7,44 +7,87 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: python_playground
 
 jobs:
-  build-and-push-image:
+  push:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
       packages: write
+      contents: read
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Log into GitHub Container Registry (GHCR)
-        # Note that the action differs if looking at GH docs or using a template directly from GH Actions
-        uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
-        with:
-          registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build image
+        run: docker build ./python-playground --file Dockerfile --tag $IMAGE_NAME --label "runnumber=${GITHUB_RUN_ID}"
 
-      - name: Extract Docker metadata (tags, labels)
-        id: meta
-        # Note that the action differs if looking at GH docs or using a template directly from GH Actions
-        uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
-        with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+      - name: Log in to registry
+        # This is where you will update the personal access token to GITHUB_TOKEN
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u $ --password-stdin
 
-      - name: Build and push Docker image
-        id: build-and-push
-        uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
-        # Note that the action differs if looking at GH docs or using a template directly from GH Actions
-        with:
-          context: .
-          push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
+      - name: Push image
+        run: |
+          IMAGE_ID=ghcr.io/${{ github.repository_owner }}/$IMAGE_NAME
 
-      # Note that the template sourced directly from GH Actions has additional actions that have been dropped
+          echo Change all uppercase to lowercase
+          IMAGE_ID=$(echo $IMAGE_ID | tr '[A-Z]' '[a-z]')
+
+          echo Strip git ref prefix from version
+          VERSION=$(echo "${{ github.ref }}" | sed -e 's,.*/\(.*\),\1,')
+
+          echo Strip "v" prefix from tag name
+          [[ "${{ github.ref }}" == "refs/tags/"* ]] && VERSION=$(echo $VERSION | sed -e 's/^v//')
+          
+          echo Use Docker `latest` tag convention
+          [ "$VERSION" == "main" ] && VERSION=latest
+          
+          echo IMAGE_ID=$IMAGE_ID
+          echo VERSION=$VERSION
+          echo Tagging docker image
+          docker tag $IMAGE_NAME $IMAGE_ID:$VERSION
+          
+          echo pushing docker image
+          docker push $IMAGE_ID:$VERSION
+
+
+
+
+  # build-and-push-image:
+  #   runs-on: ubuntu-latest
+  #   permissions:
+  #     contents: read
+  #     packages: write
+
+  #   steps:
+  #     - name: Checkout repository
+  #       uses: actions/checkout@v3
+
+  #     - name: Log into GitHub Container Registry (GHCR)
+  #       # Note that the action differs if looking at GH docs or using a template directly from GH Actions
+  #       uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
+  #       with:
+  #         registry: ${{ env.REGISTRY }}
+  #         username: ${{ github.actor }}
+  #         password: ${{ secrets.GITHUB_TOKEN }}
+
+  #     - name: Extract Docker metadata (tags, labels)
+  #       id: meta
+  #       # Note that the action differs if looking at GH docs or using a template directly from GH Actions
+  #       uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
+  #       with:
+  #         images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+
+  #     - name: Build and push Docker image
+  #       id: build-and-push
+  #       uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
+  #       # Note that the action differs if looking at GH docs or using a template directly from GH Actions
+  #       with:
+  #         context: ./python-playground
+  #         push: true
+  #         tags: ${{ steps.meta.outputs.tags }}
+  #         labels: ${{ steps.meta.outputs.labels }}
+  #         cache-from: type=gha
+  #         cache-to: type=gha,mode=max
+
+  #     # Note that the template sourced directly from GH Actions has additional actions that have been dropped
