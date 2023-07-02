@@ -1,0 +1,5 @@
+FROM ghcr.io/katlehojordan/python_playground:latest
+
+COPY . .
+
+CMD [""]

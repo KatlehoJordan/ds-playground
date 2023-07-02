@@ -20,4 +20,6 @@ This repository is meant to provide quick ways to get started in reproducible da
 
 ## Backlog
 
+- Try building docker images with docker buildkit?: <https://jpetazzo.github.io/2021/11/30/docker-build-container-images-antipatterns/>
 - publish the finished image on GitHub for easier retrieval and faster building
+  - Tests so far were not convincing -> without build kit I published a python-playground image to ghcr and then pulled it, which took 10 minutes... Building it locally also took about 10 minutes. So the overhead of having 2 docker files (one for publishing to ghcr, and another for pulling from ghcr when developing locally in a dev container) seems like it might not be worthwhile
