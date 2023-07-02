@@ -43,6 +43,7 @@
         "editor.defaultFormatter": "REditorSupport.r"
     },
     "r.bracketedPaste": true,
+    "jupyter.logging.level": "verbose",
     "r.plot.useHttpgd": true,
     "r.rterm.linux": "/usr/local/bin/radian",
     "files.associations": {

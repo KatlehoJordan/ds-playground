@@ -175,7 +175,7 @@ ggsave("feature-demos/r/outputs/plots/plot3.jpg", plot3)
         theme(panel.background = element_rect(fill = "#ffffff"))
 )
 
-ggsave("outputs/plots/plot4.png", plot4)
+ggsave("feature-demos/r/outputs/plots/plot4.png", plot4)
 
 ## Plotly of ggplots ####
 

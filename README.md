@@ -41,9 +41,8 @@ This container is meant to be used for rapid development of data science project
 
 1. Validate R works with:
 
-- Jupyter
-  - <https://www.practicaldatascience.org/html/jupyter_r_notebooks.html>
 - simplify python instructions to single file going through the features like done with r
+- r unit testing
 
 1. Publish the finished image on GitHub for easier retrieval and faster building
 

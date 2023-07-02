@@ -7,8 +7,7 @@ ENV \
     PIP_DEFAULT_TIMEOUT=300 \
     R_VERSION=4.2.3
 
-COPY python-requirements.txt python-requirements.txt
-COPY r-requirements.r r-requirements.r
+COPY requirements/ requirements/
 
 RUN \
     apt update && \
@@ -16,7 +15,7 @@ RUN \
     sudo apt upgrade -y && \
     # Required for parallel processing in some ML libraries
     sudo apt install libgomp1=10.2.1-6 && \
-    pip install -r python-requirements.txt --root-user-action=ignore && \
+    pip install -r requirements/python-requirements.txt --root-user-action=ignore && \
     # Required for R installation
     sudo apt install gdebi-core=0.9.5.7+nmu5 -y && \
     sudo apt install curl=7.74.0-1.3+deb11u7 -y && \
@@ -41,8 +40,8 @@ RUN \
     sudo apt install libfribidi-dev=1.0.8-2+deb11u1 && \
     sudo apt install libtiff5-dev=4.2.0-1+deb11u4 -y && \
     # Install R packages
-    Rscript r-requirements.r
+    Rscript requirements/r-requirements.r
 
 COPY . .
 
-CMD ["python", "main.py"]
+CMD [""]
