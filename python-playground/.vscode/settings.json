@@ -18,6 +18,7 @@
         "--profile",
         "black"
     ],
+    "jupyter.logging.level": "verbose",
     "notebook.lineNumbers": "on",
     "notebook.output.scrolling": true,
     "notebook.output.textLineLimit": 5000,
@@ -38,15 +39,5 @@
         "tests"
     ],
     "python.testing.pytestEnabled": true,
-    "python.testing.unittestEnabled": false,
-    "[r]": {
-        "editor.defaultFormatter": "REditorSupport.r"
-    },
-    "r.bracketedPaste": true,
-    "jupyter.logging.level": "verbose",
-    "r.plot.useHttpgd": true,
-    "r.rterm.linux": "/usr/local/bin/radian",
-    "files.associations": {
-        "*.Rmd": "rmd"
-    }
+    "python.testing.unittestEnabled": false
 }

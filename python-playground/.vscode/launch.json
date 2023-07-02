@@ -1,12 +1,12 @@
 {
     "configurations": [
-        {
-            "justMyCode": true,
-            "module": "main",
-            "name": "Python: Module",
-            "request": "launch",
-            "type": "python"
-        },
+        // {
+        //     "justMyCode": true,
+        //     "module": "main",
+        //     "name": "Python: Module",
+        //     "request": "launch",
+        //     "type": "python"
+        // },
         {
             "console": "integratedTerminal",
             "justMyCode": true,
@@ -14,14 +14,6 @@
             "program": "${file}",
             "request": "launch",
             "type": "python"
-        },
-        {
-            "debugMode": "file",
-            "file": "${file}",
-            "name": "Debug R-File",
-            "request": "launch",
-            "type": "R-Debugger",
-            "workingDirectory": "${workspaceFolder}"
         },
     ],
     "version": "0.2.0"

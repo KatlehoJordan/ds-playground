@@ -16,7 +16,7 @@ This repository is meant to provide quick ways to get started in reproducible da
 ## Ongoing work
 
 1. Split python and r into own docker images, because putting them into one becomes way too large
-   1. Starting with `r`
+   1. Starting with `python`
 
 ## Backlog
 

@@ -13,9 +13,6 @@ extensions=(
     "ms-python.isort@2022.8.0"
     "ms-python.pylint@2023.4.0"
     "njpwerner.autodocstring@0.6.1"
-    # For R
-    "REditorSupport.r@2.8.1"
-    "RDebugger.r-debugger@0.5.4"
 )
 
 for extension in "${extensions[@]}"; do

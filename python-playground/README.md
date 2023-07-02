@@ -14,10 +14,6 @@ This container is meant to be used for rapid development of data science project
 - If any extensions indicate that a reload is required, reload.
 
 5. From a terminal, use `sudo python main.py` to verify you have root user access and that `python` is working.
-6. Go to `main.py` and use `shift + enter` to try to initiate the REPL in `ipython`.
-
-- If the REPL does not work at all, perhaps the wrong version of the python extension is being used. See if a reload fixes.
-- If the REPL does not open in `ipython`, either it is not installed, or the settings are not configured to open it in `ipython`
 
 7. Open `demo.ipynb` and run the cells to ensure that the following are working as expected:
 
