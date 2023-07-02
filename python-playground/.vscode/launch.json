@@ -1,12 +1,5 @@
 {
     "configurations": [
-        // {
-        //     "justMyCode": true,
-        //     "module": "main",
-        //     "name": "Python: Module",
-        //     "request": "launch",
-        //     "type": "python"
-        // },
         {
             "console": "integratedTerminal",
             "justMyCode": true,

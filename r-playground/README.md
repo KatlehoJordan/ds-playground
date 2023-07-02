@@ -17,6 +17,8 @@ This container is meant to be used for rapid development of data science project
 
 ## Backlog
 
+- Switch to using poetry for faster installation of python dependencies
+- Switch to installing vs code extensions with `.devcontainer/devcontainer.json`
 - Provide example using r unit testing
 - Provide instructions for setting up r package
 - Ensure all linting is working

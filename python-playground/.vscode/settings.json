@@ -3,12 +3,17 @@
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "cSpell.words": [
+        "autoviz",
         "devcontainer",
+        "ipykernel",
         "ipynb",
         "ipython",
+        "isort",
         "jupyter",
         "lazypredict",
+        "nbformat",
         "plotly",
+        "pylint",
         "pytest",
         "seaborn",
         "sklearn",

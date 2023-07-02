@@ -4,6 +4,13 @@
 
 This container is meant to be used for rapid development of data science projects.
 
+## Ongoing work
+
+1. Minimize the image size for building this so as to speed up installation
+   1. Using poetry now
+   2. Want scikit learn and seaborn, but all else should non-standard dependencies that have their own instructional jupyter notebooks to show how to use them (lazypredict, tensorflow, autoviz, pytest)
+   3. Then improve the documentation below
+
 ## Getting started
 
 1. Fork the repository
@@ -33,6 +40,7 @@ This container is meant to be used for rapid development of data science project
 
 ## Next steps
 
+- Move lazypredict and tensorflow installations to own instructions instead of by default into the container
 - simplify python instructions to single file going through the features like done with r
 - ensure that python linting is working with black and isort
   - Black format on save is not converting long strings that are split with slashes into strings wrapped in parenthesis)
