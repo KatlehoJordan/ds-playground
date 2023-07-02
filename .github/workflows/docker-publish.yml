@@ -2,8 +2,8 @@ name: Create and publish Docker image to GitHub Container Registry (GHCR)
 
 on:
   # Note that the template sourced directly from GH Actions has additional arguments that have been dropped
-  push:
-    branches: [ "main" ]
+  workflow_dispatch:
+    # branches: [ "main" ]
     # Note that the template sourced directly from GH Actions indictes some way of doing SemVer that has been dropped here
 
 env:
