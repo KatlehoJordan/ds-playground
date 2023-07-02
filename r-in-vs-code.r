@@ -120,6 +120,9 @@ source("main.r")
 
 # Plots can be cycled through, opened in a browser, and saved from the viewer
 
+# If the option to cycle through plots is not immediately available,
+# try toggling "r.plot.useHttpgd": true/false in .vscode/settings.json
+
 library(ggplot2)
 library(plotly)
 library(shiny)

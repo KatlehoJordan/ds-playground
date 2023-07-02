@@ -34,13 +34,13 @@ RUN \
     sudo apt install libfontconfig1-dev=2.13.1-4.2 -y && \
     # For plotly
     sudo apt install libssl-dev=1.1.1n-0+deb11u5 && \
-    #   # For knitting and rendering R Markdown
-    #   sudo apt install pandoc=2.9.2.1-1+b1 -y && \
+    # For knitting and rendering R Markdown
+    sudo apt install pandoc=2.9.2.1-1+b1 -y && \
     # For devtools
     sudo apt install libharfbuzz-dev=2.7.4-1 -y && \
     sudo apt install libfribidi-dev=1.0.8-2+deb11u1 && \
     sudo apt install libtiff5-dev=4.2.0-1+deb11u4 -y && \
-    #   # Install R packages
+    # Install R packages
     Rscript r-requirements.r
 
 COPY . .
