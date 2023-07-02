@@ -1,56 +1,23 @@
 <!-- markdownlint-disable MD029 -->
 
-# Python for ds container
+# Data Science Playground
 
-This container is meant to be used for rapid development of data science projects.
+This repository is meant to provide quick ways to get started in reproducible data-science docker containers for:
+
+- `python`
+- `r`
 
 ## Getting started
 
 1. Fork the repository
 2. Clone the repository locally
-3. Use VS Code Dev containers to build a base container
-4. From a terminal, run `bash .devcontainer/install-vs-code-extensions.sh` to install the VS Code Extensions.
+3. Decide if you would like to use a `python` or an `r` container then follow the `README.md` instructions in the respective `<language>-playground` folder.
 
-- If any extensions indicate that a reload is required, reload.
+## Ongoing work
 
-5. From a terminal, use `sudo python main.py` to verify you have root user access and that `python` is working.
-6. Go to `main.py` and use `shift + enter` to try to initiate the REPL in `ipython`.
+1. Split python and r into own docker images, because putting them into one becomes way too large
+   1. Starting with `r`
 
-- If the REPL does not work at all, perhaps the wrong version of the python extension is being used. See if a reload fixes.
-- If the REPL does not open in `ipython`, either it is not installed, or the settings are not configured to open it in `ipython`
+## Backlog
 
-7. Open `demo.ipynb` and run the cells to ensure that the following are working as expected:
-
-- `jupyter` notebook
-- `seaborn` and `plotly`
-- `pandas`, `sklearn`, and `lazypredict`
-- `tensorflow`
-  is setup and all common DS packages are installed
-  
-8. Ensure `pytest` is working by running `pytest` from a terminal
-9. Ensure `pytest` integration with VS Code is working by navigating to the testing tab. Then:
-    - Running the tests
-    - Add a break point in a test and run them again
-10. Ensure you can debug:
-    - A standalone file with `python`
-    - A module from any file with `python`
-11. Make sure you can run `radian` by sending `r` to the terminal
-12. Open `r-in-vs-code.r` and follow instructions to ensure the features are working as expected.
-
-## Next steps
-
-1. Validate R works with:
-
-- simplify python instructions to single file going through the features like done with r
-- r unit testing
-
-1. Publish the finished image on GitHub for easier retrieval and faster building
-
-- Currently taking like 30 minutes to build the image with python + r
-- Container is unstable, disconnecting frequently and locking up Docker so that I have to restart the computer to get everything working again
-
-3. As your project gets more complex, get python linters playing well together starting with black, then isort
-   1. Black format on save is not converting long strings that are split with slashes into strings wrapped in parenthesis)
-   2. Pylint is not respecting when I try to update the max line length argument, still complaining even if I bump it up a a lot
-   3. Black is not complaining even though I have set line length very low
-4. Get the python REPL to automatically send an entire block of code instead of just the line and then advance to the next line. [This discussion indicates the issue is currently being ignored](https://github.com/microsoft/vscode-python/issues/18105).
+- publish the finished image on GitHub for easier retrieval and faster building
