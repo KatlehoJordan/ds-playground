@@ -24,7 +24,7 @@ jobs:
           cd python-playground
           echo "IMAGE_NAME is $IMAGE_NAME"
           echo "GITHUB_RUN_ID is $GITHUB_RUN_ID"
-          docker build . --tag $IMAGE_NAME --file ./Dockerfile --label "runnumber=${GITHUB_RUN_ID}"
+          DOCKER_BUILDKIT=1 docker build . --tag $IMAGE_NAME --file ./Dockerfile --label "runnumber=${GITHUB_RUN_ID}"
 
       - name: Log in to registry
         # This is where you will update the personal access token to GITHUB_TOKEN

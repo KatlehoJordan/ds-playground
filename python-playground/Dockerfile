@@ -1,7 +1,6 @@
 FROM python:3.9.17-slim-bullseye
 
 ENV \
-    DOCKER_BUILDKIT=1 \
     PYTHONUNBUFFERED=1 \
     PYTHONDONTWRITEBYTECODE=1 \
     PIP_ROOT_USER_ACTION=ignore \
