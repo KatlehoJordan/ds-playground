@@ -41,12 +41,14 @@ This container is meant to be used for rapid development of data science project
 
 1. Validate R works with:
 
-- with VS Code Debugger
-- with Jupyter Notebook support
-- with R Markdown support
-- building a Shiny app
+- Jupyter
+  - <https://www.practicaldatascience.org/html/jupyter_r_notebooks.html>
+- simplify python instructions to single file going through the features like done with r
 
-2. Publish the finished image on GitHub for easier retrieval and faster building
+1. Publish the finished image on GitHub for easier retrieval and faster building
+
+- Currently taking like 30 minutes to build the image with python + r
+- Container is unstable, disconnecting frequently and locking up Docker so that I have to restart the computer to get everything working again
 
 3. As your project gets more complex, get python linters playing well together starting with black, then isort
    1. Black format on save is not converting long strings that are split with slashes into strings wrapped in parenthesis)

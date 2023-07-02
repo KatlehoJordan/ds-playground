@@ -15,6 +15,14 @@
             "request": "launch",
             "type": "python"
         },
+        {
+            "debugMode": "file",
+            "file": "${file}",
+            "name": "Debug R-File",
+            "request": "launch",
+            "type": "R-Debugger",
+            "workingDirectory": "${workspaceFolder}"
+        },
     ],
     "version": "0.2.0"
 }

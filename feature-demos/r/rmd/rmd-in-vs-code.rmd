@@ -1,0 +1,27 @@
+# R Markdown in VS Code
+
+## Can run chunks line by line
+
+```{r}
+linear_model <- lm(mpg ~ ., data = mtcars)
+summary(linear_model)
+```
+
+## Can run current chunk with ctrl+shift+enter
+
+```{r chunk-1}
+x <- rnorm(100)
+y <- rnorm(100)
+```
+
+## Can view plots just like with `.r` files using `httpgd`
+
+```{r plot1}
+plot(rnorm(100))
+abline(h = 0, col = "red")
+```
+
+## Other features
+
+- Knitting: can knit to html from command palette
+- Live preview: can be previewed like Markdown files

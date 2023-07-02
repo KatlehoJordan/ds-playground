@@ -22,6 +22,30 @@ library(glue)
 
 object_to_appear_in_workspace <- "but I don't want comfort"
 
+# Debugging ####
+
+## Debug R-File will pause at errors in the current file ####
+
+# Launch debugger with F5
+# Place breakpoints with F9
+# Add items to the watch list to observe them at different points
+
+function_1 <- function(i) {
+    (1:10)[[i]]
+}
+
+inputs <- c(4, 5, 2, 9, 0, 8)
+
+for (x in inputs) {
+    function_1(x)
+}
+
+## Alternative R-Debugger configurations ####
+
+# One can add more configurations to .vscode/launch.json
+# for initiating the debugger in a specific file, function, package,
+# or other options. However it will require more configuration.
+
 # Help window ####
 
 # As you explore an item, a new window should appear for help
@@ -78,7 +102,7 @@ fun <- function(variable_1, variable_2) {
 
 ## Context aware auto-completion ####
 
-my_data <- read.csv(file = "data/context-aware-intellisense.csv", sep = "\t")
+my_data <- read.csv(file = "feature-demos/r/data/context-aware-intellisense.csv", sep = "\t")
 
 my_data %>%
     select(tidy_variable_1, second_variable)
@@ -114,7 +138,7 @@ my_new_var
 
 ## Document links: ctrl+click to jump to a document ####
 
-source("main.r")
+source("feature-demos/r/src/sourced-file.r")
 
 # Plotting ####
 
@@ -140,8 +164,8 @@ plot2 <- plot(mpg$cyl, mpg$hwy)
         theme(panel.background = element_rect(fill = "black"))
 )
 
-ggsave("outputs/plots/plot2.svg", plot2)
-ggsave("outputs/plots/plot3.jpg", plot3)
+ggsave("feature-demos/r/outputs/plots/plot2.svg", plot2)
+ggsave("feature-demos/r/outputs/plots/plot3.jpg", plot3)
 
 ## Easy changing of colors ####
 
@@ -160,3 +184,7 @@ ggplotly(plot3)
 # Shiny apps ####
 
 shiny::runExample("01_hello")
+
+# R Markdown ####
+
+# See `rmd-in-vs-code.md` for a quick demo of these features
