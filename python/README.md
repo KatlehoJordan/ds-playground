@@ -2,14 +2,13 @@
 
 # `python` playground for data science
 
-This container is meant to be used for rapid development of data science projects.
+This container is meant to be used for rapid development of data science projects using `python`.
 
 ## Getting started
 
-1. Fork the repository
-2. Clone the repository locally
-3. Use VS Code Dev containers to build a base container
-4. Open `main.py` to start getting an introduction to the functionality.
+1. Open a new VS Code workspace in `python`
+2. Use VS Code Dev containers to build a base container
+3. Open `main.py` to start getting an introduction to the functionality.
 
 ## Using alias `python-playground`
 

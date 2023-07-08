@@ -6,5 +6,5 @@ services:
       args:
         DOCKER_BUILDKIT: 1
     volumes:
-      - .:/workspaces/python
+      - .:/workspaces/r
     command: /bin/sh -c "while true; do sleep 1; done"

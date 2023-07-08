@@ -1,15 +1,17 @@
 {
-    "name": "Data science playground",
+    "name": "R playground",
     "dockerComposeFile": [
         "../docker-compose.yml"
     ],
-    "service": "r-playground",
+    "service": "playground",
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
     "customizations": {
         "vscode": {
-            "settings": {
-                "git.enabled": false
-            }
+            "extensions": [
+                "ms-toolsai.jupyter",
+                "REditorSupport.r",
+                "RDebugger.r-debugger"
+            ]
         }
     },
     "remoteUser": "root"

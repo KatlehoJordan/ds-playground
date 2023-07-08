@@ -1,5 +1,10 @@
 # R Markdown in VS Code
 
+Using R Markdown in VS Code will require additional installations including:
+
+- The debian tool `pandoc` (`sudo apt install pandoc -y`)
+- The `r` package `rmarkdown` (`install.packages('rmarkdown')`)
+
 ## Can run chunks line by line
 
 ```{r}

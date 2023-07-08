@@ -22,30 +22,6 @@ library(glue)
 
 object_to_appear_in_workspace <- "but I don't want comfort"
 
-# Debugging ####
-
-## Debug R-File will pause at errors in the current file ####
-
-# Launch debugger with F5
-# Place breakpoints with F9
-# Add items to the watch list to observe them at different points
-
-function_1 <- function(i) {
-    (1:10)[[i]]
-}
-
-inputs <- c(4, 5, 2, 9, 0, 8)
-
-for (x in inputs) {
-    function_1(x)
-}
-
-## Alternative R-Debugger configurations ####
-
-# One can add more configurations to .vscode/launch.json
-# for initiating the debugger in a specific file, function, package,
-# or other options. However it will require more configuration.
-
 # Help window ####
 
 # As you explore an item, a new window should appear for help
@@ -149,7 +125,6 @@ source("feature-demos/r/src/sourced-file.r")
 
 library(ggplot2)
 library(plotly)
-library(shiny)
 
 ## Base plotting ####
 
@@ -181,10 +156,18 @@ ggsave("feature-demos/r/outputs/plots/plot4.png", plot4)
 
 ggplotly(plot3)
 
+# Debugging ####
+
+# See demos/debugging.R for a demo of debugging r in VS Code
+
 # Shiny apps ####
 
-shiny::runExample("01_hello")
+# See demos/shiny.R for a quick demo of shiny
 
 # R Markdown ####
 
-# See `rmd-in-vs-code.md` for a quick demo of these features
+# See `demos/r-markdown.rmd` for a quick demo of these features
+
+# Jupyter Notebook ####
+
+# Open notebooks/quickstart.ipynb
