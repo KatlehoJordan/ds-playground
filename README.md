@@ -21,9 +21,13 @@ This repository is meant to provide quick ways to get started in reproducible da
 - More users, so:
   - More extensions with easier setup
   - More tutorials and useful hints from GitHub Copilot
+  - More standardized formatting rules
+- More modular imports when building own packages
+- Less overhead to build own packages
 - Fewer dependencies to get it running for use in Jupyter
+- Much smaller diskspace and memory footprint
 
 **Strengths for `r`:**
 
 - The piping syntax from `tidyverse` can make data analysis very fast
-- The documentation is more standardized and easier to retrieve (just `?<function name>`)
+- The documentation is more standardized and easier to retrieve (`?<function name>`)
