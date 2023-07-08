@@ -10,7 +10,59 @@ features in VS Code.
 # The wrong version of python extensions
 # Incorrect configuration of .vscode/settings.json
 
-from src.add_numbers import add_numbers
+print("hello from python")
+
+# Pylance features ####
+
+# Most of the features that make VS Code work with python come from pylance.
+# These include: docstrings, signature help, parameter suggestions, code
+# completion, auto-imports, as-you-type reporting of diagnostics, code outline
+# code navigation, type-checking mode, IntelliCode compatibility, Jupyter
+# Notebooks compatibility, semantic highlighting.
+
+## autoDocstring ####
+
+# When you define a function, autoDocstring will help populate it
+
+
+def simple_demo_function(
+    arg_1: int, arg_2: int
+):
+    """This is a simple demo of autoDocstring
+
+    Args:
+        arg_1 (float): a number to be added
+        arg_2 (float): a number to be added
+    """
+    return sum(range(arg_1, arg_2))
+
+
+## IntelliCode ####
+
+# Start typing a function to see tooltip with the function signature
+
+print("Demo with intellicode")
+
+## IntelliCode API Usage Examples
+
+# Hover over a function in order to get a tooltip to see examples from github
+
+sum(range(4))
+
+# Formatting configurations ####
+
+## Black Formatter ####
+
+# The BlackFormatter formats on type, paste, and save based on settings.json
+
+## isort ####
+
+# Sorts imports automatically on type, paste, and save based on settings.json
+
+## Pylint ####
+
+# Linter automatically lints files as you work on them to help you catch
+# and correct bad practices.
 
 # Debugging ####
 
@@ -21,7 +73,7 @@ from src.add_numbers import add_numbers
 # Add items to the watch list to observe them at different points
 
 
-def function_1(i):
+def function_1(i: int):
     """Takes the i - 1 index from the list of numbers from 1 to 10
 
     Args:
@@ -40,28 +92,12 @@ for x in inputs:
 
 # One can add more configurations to .vscode/launch.json
 # for initiating the debugger in a specific file, function, module,
-# or other options. However it will require more configuration.
+# or other options. However it will require moreconfiguration.
 
+# Configure tests ####
 
-def greet(name):
-    """
-    This function just does an addition and gives a greeting.
+# Navigate to tests/test_add_numbers for instructions
 
-    Args:
-        name (str): The name of the person to be greeted.
-    """
-    message = f"Hello, {name}!"
-    print(message)
-    print("Welcome to our program!")
-    print("Now we will add two numbers")
-    print("We shall add 1 and 2")
+# Jupyter Notebook ####
 
-    print(add_numbers(1, 2))
-
-    print(
-        "Here, we will have a very long test string in order to trigger the \
-              linters to complain and see if we can resolve any of their complaints."
-    )
-
-
-greet("user")
+# Open notebooks/quickstart.ipynb
