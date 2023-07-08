@@ -21,6 +21,7 @@ RUN \
     sudo apt install libfontconfig1-dev -y && \
     # For plotly
     sudo apt install libssl-dev && \
+    sudo apt install libcurl4-openssl-dev && \
     # For jupyter
     pip install jupyter_client --break-system-packages && \
     # Install R packages

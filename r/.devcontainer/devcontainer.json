@@ -9,8 +9,7 @@
         "vscode": {
             "extensions": [
                 "ms-toolsai.jupyter",
-                "REditorSupport.r",
-                "RDebugger.r-debugger"
+                "REditorSupport.r"
             ]
         }
     },

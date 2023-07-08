@@ -78,7 +78,7 @@ fun <- function(variable_1, variable_2) {
 
 ## Context aware auto-completion ####
 
-my_data <- read.csv(file = "feature-demos/r/data/context-aware-intellisense.csv", sep = "\t")
+my_data <- read.csv(file = "data/context-aware-intellisense.csv", sep = "\t")
 
 my_data %>%
     select(tidy_variable_1, second_variable)
@@ -114,7 +114,7 @@ my_new_var
 
 ## Document links: ctrl+click to jump to a document ####
 
-source("feature-demos/r/src/sourced-file.r")
+source("src/sourced-file.r")
 
 # Plotting ####
 
@@ -124,7 +124,6 @@ source("feature-demos/r/src/sourced-file.r")
 # try toggling "r.plot.useHttpgd": true/false in .vscode/settings.json
 
 library(ggplot2)
-library(plotly)
 
 ## Base plotting ####
 
@@ -139,9 +138,6 @@ plot2 <- plot(mpg$cyl, mpg$hwy)
         theme(panel.background = element_rect(fill = "black"))
 )
 
-ggsave("feature-demos/r/outputs/plots/plot2.svg", plot2)
-ggsave("feature-demos/r/outputs/plots/plot3.jpg", plot3)
-
 ## Easy changing of colors ####
 
 (
@@ -150,11 +146,17 @@ ggsave("feature-demos/r/outputs/plots/plot3.jpg", plot3)
         theme(panel.background = element_rect(fill = "#ffffff"))
 )
 
-ggsave("feature-demos/r/outputs/plots/plot4.png", plot4)
+## Saving different output types ####
+
+ggsave("outputs/plots/plot2.svg", plot2)
+ggsave("outputs/plots/plot3.jpg", plot3)
+ggsave("outputs/plots/plot4.png", plot4)
 
 ## Plotly of ggplots ####
 
-ggplotly(plot3)
+library(plotly)
+
+ggplotly(plot4)
 
 # Debugging ####
 
