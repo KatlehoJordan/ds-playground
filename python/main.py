@@ -92,7 +92,7 @@ for x in inputs:
 
 # One can add more configurations to .vscode/launch.json
 # for initiating the debugger in a specific file, function, module,
-# or other options. However it will require moreconfiguration.
+# or other options. However it will require more configuration.
 
 # Configure tests ####
 

@@ -5,6 +5,10 @@
     "cSpell.words": [
         "autoviz",
         "devcontainer",
+        "docstrings",
+        "github",
+        "inclusive",
+        "intellicode",
         "ipykernel",
         "ipynb",
         "ipython",
@@ -13,6 +17,7 @@
         "lazypredict",
         "nbformat",
         "plotly",
+        "pylance",
         "pylint",
         "pytest",
         "seaborn",
