@@ -3,7 +3,7 @@
     "dockerComposeFile": [
         "../docker-compose.yml"
     ],
-    "service": "python-playground",
+    "service": "playground",
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
     "customizations": {
         "vscode": {
