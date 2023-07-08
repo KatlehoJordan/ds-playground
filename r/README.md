@@ -38,7 +38,7 @@ r
 
 - Include tidymodels tutorial
 - Find way to install r dependencies in parallel, and to automatically install system-wide dependencies
-    - Attempts to use renv with pak failed since pak installations failed over and over again
+  - Attempts to use renv with pak failed since pak installations failed over and over again
 - Provide example using r unit testing
 - Provide instructions for setting up r package
 - Ensure all linting is working

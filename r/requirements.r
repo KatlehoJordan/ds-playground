@@ -11,7 +11,7 @@ packages <- c(
     "languageserver",
     # Enables piping and dplyr data-manipulation verbs
     "tidyr",
-    # For plottingin VS Code
+    # For plotting in VS Code
     "httpgd",
     "ggplot2",
     "svglite",

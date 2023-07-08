@@ -1,8 +1,17 @@
 {
     "cSpell.words": [
         "devcontainer",
+        "dplyr",
+        "ggplot",
+        "httpgd",
+        "installspec",
         "jupyter",
+        "Ncpus",
         "plotly",
+        "renv",
+        "svglite",
+        "tidymodels",
+        "tidyr"
     ],
     "notebook.lineNumbers": "on",
     "notebook.output.scrolling": true,
