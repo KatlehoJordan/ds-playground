@@ -31,3 +31,8 @@ This repository is meant to provide quick ways to get started in reproducible da
 
 - The piping syntax from `tidyverse` can make data analysis very fast
 - The documentation is more standardized and easier to retrieve (`?<function name>`)
+
+## Next steps
+
+- See if you can find a way to make all of your packages 'slim'?
+  - YouTube videos by 'slim.ai' called 'SlimDevOps', and use 'DockerSlim' to try to reduce the docker container sizes
