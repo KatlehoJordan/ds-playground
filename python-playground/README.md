@@ -27,4 +27,5 @@ This container is meant to be used for rapid development of data science project
   - Black format on save is not converting long strings that are split with slashes into strings wrapped in parenthesis)
   - Black is not complaining even though I have set line length very low
   - Pylint is not respecting when I try to update the max line length argument, still complaining even if I bump it up a a lot
+- Configure so that can launch the Docker container from bash to just get into an ipython instance
 - Get the python REPL to automatically send an entire block of code instead of just the line and then advance to the next line. [This discussion indicates the issue is currently being ignored](https://github.com/microsoft/vscode-python/issues/18105).

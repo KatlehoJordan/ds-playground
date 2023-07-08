@@ -11,16 +11,8 @@ This repository is meant to provide quick ways to get started in reproducible da
 
 1. Fork the repository
 2. Clone the repository locally
-3. Decide if you would like to use a `python` or an `r` container then follow the `README.md` instructions in the respective `<language>-playground` folder.
-
-## Publishing new images
-
-The images used for the 'playgrounds' are published on GitHub Container Registry (GHCR). The
-
-## Ongoing work
-
-1. Split python and r into own docker images, because putting them into one becomes way too large
-   1. Starting with `python` - reducing image size by only having minimal packages to start with
+3. Decide if you would like to use a `python` or an `r` container, then open a new VS Code session in `python-playground` or `r-playground` depending on which language you would like to use.
+4. Follow the `README.md` instructions in the respective `<language>-playground` folder.
 
 ## Backlog
 
