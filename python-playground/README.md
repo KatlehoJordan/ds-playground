@@ -20,7 +20,7 @@ This container is meant to be used for rapid development of data science project
 
 ## Next steps
 
-- simplify python instructions to single file going through the features like done with r
+- Create demo notebook for Autoviz
 - [Create demo for Django](https://code.visualstudio.com/docs/python/tutorial-django)
 - [Create demo for Flask](https://code.visualstudio.com/docs/python/tutorial-flask)
 - ensure that python linting is working with black and isort
