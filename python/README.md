@@ -34,8 +34,14 @@ Alternatively, if you have the alias in your shell profile:
 ipython
 ```
 
+## Ongoing work
+
+- Completing notebooks for w3 schools
+
 ## Next steps
 
+- Solve why the IntelliCode find examples on GitHub is not always working, as tracked in [this GitHub issue](https://github.com/MicrosoftDocs/intellicode/issues/466)
+  - Similarly, as seen in the screenshots taken for that issue, the full language service does not seem to work in jupyter notebooks, as the function signatures come through, but not the docstrings.
 - Create demo notebook for Autoviz
 - [Create demo for Django](https://code.visualstudio.com/docs/python/tutorial-django)
 - [Create demo for Flask](https://code.visualstudio.com/docs/python/tutorial-flask)

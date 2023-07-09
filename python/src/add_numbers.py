@@ -3,7 +3,7 @@ This module is simplified for building pytest against it.
 """
 
 
-def add_numbers(num_a, num_b):
+def add_numbers(num_a: float, num_b: float) -> float:
     """This function adds two numbers together.
 
     Args:

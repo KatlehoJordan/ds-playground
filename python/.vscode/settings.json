@@ -20,6 +20,7 @@
         "pylance",
         "pylint",
         "pytest",
+        "scikit",
         "seaborn",
         "sklearn",
         "tensorflow"
