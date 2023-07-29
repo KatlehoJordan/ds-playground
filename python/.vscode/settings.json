@@ -51,4 +51,7 @@
     ],
     "python.testing.pytestEnabled": true,
     "python.testing.unittestEnabled": false,
+    "python.analysis.extraPaths": [
+        "./notebooks/w3 schools/python-tutorial"
+    ],
 }
