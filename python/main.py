@@ -86,6 +86,8 @@ inputs = [4, 5, 2, 9, 0, 8, "1"]
 
 for x in inputs:
     function_1(x)
+    # Use `# type: ignore` to silence linting errors on specific lines
+    function_1(x)  # type: ignore
 
 
 ## Alternative Debug Python configurations ####
