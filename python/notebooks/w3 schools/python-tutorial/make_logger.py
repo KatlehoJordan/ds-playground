@@ -1,12 +1,13 @@
 """
-This module makes a logger.
+This module provides functions for making loggers.
 """
 
 import logging
+from typing import Callable
 
 
 def make_logger(
-    name: str = "default non-root logger",
+    name: str = "default non-root",
     level: str = "INFO",
 ) -> logging.Logger:
     """
@@ -25,17 +26,36 @@ def make_logger(
     handler = logging.StreamHandler()
     formatter = logging.Formatter(
         fmt="%(asctime)s "
-        "%(name)s "
-        "logged a message"
-        "\n\n%(levelname)s:\n"
-        "%(message)s"
-        "\n\t\tModule: %(module)s"
-        "\tFunction: %(funcName)s"
-        "\n\t\tFile: %(filename)s "
-        "\tLine: %(lineno)d",
-        datefmt="On %Y-%m-%d at %H:%M:%S",
+        "\n\tLogger: %(name)s "
+        "Module: %(module)s "
+        "Function: %(funcName)s "
+        "File: %(filename)s "
+        "Line: %(lineno)d"
+        "\n%(levelname)s:\n%(message)s",
+        datefmt="\n%Y-%m-%d %H:%M:%S",
     )
     handler.setFormatter(formatter)
     logger.addHandler(handler)
     logger.setLevel(level)
     return logger
+
+
+def make_printer() -> Callable[..., None]:
+    """
+    Makes a printer. The difference to the `print()` function is subtle;
+    here, doing multi-line strings are done the same way as with a logger ---
+    with \\n and quotation marks but without a comma for each line. Also,
+    injecting variables into the string is the same as for with the logger ---
+    use %s syntax instead of f-strings.
+
+    Returns:
+        A function for printing to the logs.
+    """
+
+    logger = logging.getLogger("printer")
+    handler = logging.StreamHandler()
+    formatter = logging.Formatter("%(message)s")
+    handler.setFormatter(formatter)
+    logger.addHandler(handler)
+    logger.setLevel("DEBUG")
+    return logger.debug
