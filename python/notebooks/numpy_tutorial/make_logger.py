@@ -31,7 +31,7 @@ def make_logger(
         "Function: %(funcName)s "
         "File: %(filename)s "
         "Line: %(lineno)d"
-        "\n%(levelname)s:\n%(message)s",
+        "\n%(levelname)s:\n%(message)s\n",
         datefmt="\n%Y-%m-%d %H:%M:%S",
     )
     handler.setFormatter(formatter)
