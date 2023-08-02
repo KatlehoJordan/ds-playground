@@ -12,6 +12,7 @@ RUN \
     apt update && \
     apt install sudo && \
     sudo apt upgrade -y && \
+    pip install --upgrade pip && \
     pip install poetry && \
     poetry config virtualenvs.create false && \
     poetry install --without ml --without dev
