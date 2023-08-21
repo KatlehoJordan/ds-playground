@@ -423,7 +423,8 @@ axes.spines.right:  False
                   # e.g. '1f77b4', instead of 1f77b4.
                   # See also https://matplotlib.org/stable/tutorials/intermediate/color_cycle.html
                   # for more details on prop_cycle usage.
-# These colors match my excel theme and go from dark to light
+# These colors match my excel theme and go from dark to light:
+# should be from viridis magma from the beginnig
 axes.prop_cycle: cycler('color', ['150e37', '3b0f70', '641A80', '8c2381', 'B63679', 'de4968', 'f76f5c', 'fe9f6d', 'fece91', 'fcfdbf'])
 #axes.xmargin:   .05  # x margin.  See `axes.Axes.margins`
 #axes.ymargin:   .05  # y margin.  See `axes.Axes.margins`
