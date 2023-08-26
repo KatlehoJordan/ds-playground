@@ -25,9 +25,7 @@ print("hello from python")
 # When you define a function, autoDocstring will help populate it
 
 
-def simple_demo_function(
-    arg_1: int, arg_2: int
-):
+def simple_demo_function(arg_1: int, arg_2: int):
     """This is a simple demo of autoDocstring
 
     Args:
@@ -102,4 +100,4 @@ for x in inputs:
 
 # Jupyter Notebook ####
 
-# Open notebooks/quickstart.ipynb
+# Open notebooks/data_science_quickstarts/quickstart.ipynb

@@ -4,6 +4,7 @@
     },
     "cSpell.words": [
         "autoviz",
+        "debuggable",
         "devcontainer",
         "docstrings",
         "github",
@@ -21,10 +22,12 @@
         "pylance",
         "pylint",
         "pytest",
+        "quickstarts",
         "scikit",
         "seaborn",
         "sklearn",
-        "tensorflow"
+        "tensorflow",
+        "venv"
     ],
     "isort.args": [
         "--profile",

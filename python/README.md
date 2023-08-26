@@ -17,6 +17,7 @@ There are two ways to try to run this:
 4. Install poetry dependencies with `poetry install`. If you encounter errors, consider that your shell profile may need to be configured differently.
 5. Consider using VS Code and using the profile (including extensions) for the Ubuntu setup you have in your dot-files repository.
 6. With VS code, select the interpreter that is in the `.venv` folder. You may then need to restart the VS Code session for the extensions to work.
+7. Open `main.py` to start getting an introduction to the functionality.
 
 ## Getting started using VS Code Dev Containers
 
