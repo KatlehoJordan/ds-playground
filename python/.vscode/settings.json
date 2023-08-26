@@ -3,12 +3,16 @@
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
     "cSpell.words": [
+        "arange",
         "autoviz",
+        "binwidth",
         "chisquare",
         "debuggable",
+        "despine",
         "devcontainer",
         "docstrings",
         "edgecolor",
+        "emath",
         "github",
         "histplot",
         "inclusive",
@@ -19,10 +23,13 @@
         "isort",
         "jupyter",
         "lazypredict",
+        "lineplot",
+        "logn",
         "matplotlib",
         "mpltstyle",
         "nbformat",
         "numpy",
+        "pareto",
         "plotly",
         "pylance",
         "pylint",
@@ -34,8 +41,11 @@
         "seaborn",
         "sklearn",
         "tensorflow",
+        "twinx",
         "venv",
-        "xlabel"
+        "xlabel",
+        "xlim",
+        "ylabel"
     ],
     "isort.args": [
         "--profile",
