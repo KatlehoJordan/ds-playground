@@ -45,7 +45,8 @@
         "venv",
         "xlabel",
         "xlim",
-        "ylabel"
+        "ylabel",
+        "zipf"
     ],
     "isort.args": [
         "--profile",
