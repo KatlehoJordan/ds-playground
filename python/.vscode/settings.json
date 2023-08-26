@@ -29,6 +29,7 @@
         "pyplot",
         "pytest",
         "quickstarts",
+        "rayleigh",
         "scikit",
         "seaborn",
         "sklearn",
