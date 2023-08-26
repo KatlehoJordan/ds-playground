@@ -15,6 +15,8 @@ There are two ways to try to run this:
    1. If this is not installed, then you will need to install it. Tested version is `Python 3.11.4`
 2. Verify you have `poetry` installed with `poetry --version`
    1. If this is not installed, then you will need to install it. Tested version is `poetry 1.6.1`
+3. Open a VS Code session in the `python` directory
+4. Install poetry dependencies with `poetry install`
 
 ## Getting started using VS Code Dev Containers
 
