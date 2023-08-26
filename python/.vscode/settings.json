@@ -16,6 +16,7 @@
         "jupyter",
         "lazypredict",
         "nbformat",
+        "numpy",
         "plotly",
         "pylance",
         "pylint",
