@@ -4,13 +4,25 @@
 
 This container is meant to be used for rapid development of data science projects using `python`.
 
-## Getting started
+There are two ways to try to run this:
+
+1. Locally in an Ubuntu machine using `poetry`. [See instructions below](#getting-started-locally-in-an-ubuntu-machine-using-poetry).
+2. Using VS Code Dev Containers. [See instructions below](#getting-started-using-vs-code-dev-containers); this may be limited since I stopped developing in this way)
+
+## Getting started locally in an Ubuntu machine using `poetry`
+
+1. Verify you have python installed with `python --version`
+   1. If this is not installed, then you will need to install it. Tested version is `Python 3.11.4`
+2. Verify you have `poetry` installed with `poetry --version`
+   1. If this is not installed, then you will need to install it. Tested version is `poetry 1.6.1`
+
+## Getting started using VS Code Dev Containers
 
 1. Open a new VS Code workspace in `python`
 2. Use VS Code Dev containers to build a base container
 3. Open `main.py` to start getting an introduction to the functionality.
 
-## Using alias `python-playground`
+### Using alias `python-playground`
 
 This alias should open a VS Code session in the correct location. Then use VS Code to restart the Dev Container.
 
@@ -18,7 +30,7 @@ This alias should open a VS Code session in the correct location. Then use VS Co
 python-playground
 ```
 
-### Running `ipython` from within the container
+#### Running `ipython` from within the container
 
 Ensure that Docker desktop is running. Then:
 
