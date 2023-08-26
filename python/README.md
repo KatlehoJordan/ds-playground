@@ -11,8 +11,8 @@ There are two ways to try to run this:
 
 ## Getting started locally in an Ubuntu machine using `poetry`
 
-1. Verify you have python installed with `python --version`. If this is not installed, then you will need to install it. Tested version is `Python 3.11.4`
-2. Verify you have `poetry` installed with `poetry --version`. If this is not installed, then you will need to install it. Tested version is `poetry 1.6.1`
+1. Verify you have python installed with `python --version`. If this is not installed, then you will need to install it. Tested version is `Python 3.11.4`.
+2. Verify you have `poetry` installed with `poetry --version`. If this is not installed, then you will need to install it. Tested version is `poetry 1.6.1`. Furthermore, you may need to configure poetry to, for example, create virtual environments within your projects. Consider using your poetry configurations from your dot-files repository.
 3. Open a VS Code session in the `python` directory.
 4. Install poetry dependencies with `poetry install`. If you encounter errors, consider that your shell profile may need to be configured differently.
 5. Consider using VS Code and using the profile (including extensions) for the Ubuntu setup you have in your dot-files repository.
