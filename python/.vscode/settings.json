@@ -10,6 +10,7 @@
         "debuggable",
         "despine",
         "devcontainer",
+        "divmod",
         "docstrings",
         "dtype",
         "edgecolor",
